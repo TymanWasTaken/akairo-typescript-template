@@ -1,6 +1,6 @@
 # Akairo typescript template
 
-A template for you to start on a disord bot using nodejs, akairo, and typescript.
+A template for you to start making a discord bot using nodejs, akairo, and typescript.
 
 ## How to set up
 1. Create src/commands, src/listeners, and src/inhibitors
