@@ -30,7 +30,6 @@
 		"discord.js": "discordjs/discord.js#f7643f7bbe64003ad8b221006190dd15529651e9"
 	},
 	"prettier": {
-		"printWidth": 128,
 		"useTabs": true,
 		"quoteProps": "consistent",
 		"singleQuote": true,
