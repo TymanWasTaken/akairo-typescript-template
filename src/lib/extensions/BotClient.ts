@@ -1,4 +1,9 @@
-import { AkairoClient, CommandHandler, InhibitorHandler, ListenerHandler } from 'discord-akairo';
+import {
+	AkairoClient,
+	CommandHandler,
+	InhibitorHandler,
+	ListenerHandler
+} from 'discord-akairo';
 import { Intents } from 'discord.js';
 import { join } from 'path';
 
