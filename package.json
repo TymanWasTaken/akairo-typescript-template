@@ -15,17 +15,19 @@
 	"devDependencies": {
 		"@types/node": "^14.14.31",
 		"@types/prettier": "^2",
-		"@typescript-eslint/eslint-plugin": "^4.15.2",
-		"@typescript-eslint/parser": "^4.15.2",
+		"@typescript-eslint/eslint-plugin": "^4.25.0",
+		"@typescript-eslint/parser": "^4.25.0",
+		"discord-api-types": "^0.18.1",
 		"eslint": "^7.20.0",
+		"eslint-config-prettier": "^8.3.0",
+		"prettier": "^2.3.0",
 		"rimraf": "^3.0.2",
 		"source-map-support": "^0.5.19",
 		"typescript": "^4.2.2"
 	},
 	"dependencies": {
 		"discord-akairo": "SkyblockDev/discord-akairo#59db80742b2bba62cdcfa5505b4522a7134e8e04",
-		"discord.js": "discordjs/discord.js#f7643f7bbe64003ad8b221006190dd15529651e9",
-		"prettier": "^2.3.0"
+		"discord.js": "discordjs/discord.js#f7643f7bbe64003ad8b221006190dd15529651e9"
 	},
 	"prettier": {
 		"printWidth": 128,
@@ -34,5 +36,45 @@
 		"singleQuote": true,
 		"trailingComma": "none",
 		"endOfLine": "lf"
+	},
+	"eslintConfig": {
+		"env": {
+			"es2021": true,
+			"node": true
+		},
+		"extends": [
+			"eslint:recommended",
+			"plugin:@typescript-eslint/recommended",
+			"prettier"
+		],
+		"parser": "@typescript-eslint/parser",
+		"parserOptions": {
+			"ecmaVersion": 12,
+			"sourceType": "module"
+		},
+		"plugins": [
+			"@typescript-eslint"
+		],
+		"ignorePatterns": [
+			"dist"
+		],
+		"rules": {
+			"indent": [
+				"error",
+				"tab"
+			],
+			"linebreak-style": [
+				"error",
+				"unix"
+			],
+			"quotes": [
+				"error",
+				"single"
+			],
+			"semi": [
+				"error",
+				"always"
+			]
+		}
 	}
 }
