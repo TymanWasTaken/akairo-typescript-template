@@ -17,16 +17,16 @@ export class BotClient extends AkairoClient {
 		prefix: '-',
 		commandUtil: true,
 		handleEdits: true,
-		directory: join(__dirname, '..', 'commands'),
+		directory: join(__dirname, '..', '..', 'commands'),
 		allowMention: true,
 		automateCategories: true
 	});
 	public listenerHandler: ListenerHandler = new ListenerHandler(this, {
-		directory: join(__dirname, '..', 'listeners'),
+		directory: join(__dirname, '..', '..', 'listeners'),
 		automateCategories: true
 	});
 	public inhibitorHandler: InhibitorHandler = new InhibitorHandler(this, {
-		directory: join(__dirname, '..', 'inhibitors')
+		directory: join(__dirname, '..', '..', 'inhibitors')
 	});
 	public constructor(config: BotConfig) {
 		super(
